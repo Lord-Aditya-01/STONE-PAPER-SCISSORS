@@ -27,36 +27,36 @@ const playGame = (userChoice) => {
         if(userChoice === "rock") {
             if(compChoice === "paper") {
                 console.log("Computer Win");
-                msg.innerText = "Computer Win!";
+                msg.innerText = "Computer Win! Computer's Paper beats rock.";
                 compScore++;
                 cScore.innerText = compScore;
             } else {
                 console.log("You Win");
-                msg.innerText = "You Win!";
+                msg.innerText = "You Win! Your rock beats scissor.";
                 userScore++;
                 yScore.innerText = userScore;
             }
         } else if (userChoice === "paper") {
             if(compChoice === "rock") {
                 console.log("You Win");
-                msg.innerText = "You Win!";
+                msg.innerText = "You Win! Your paper beats rock.";
                 userScore++;
                 yScore.innerText = userScore;
             } else {
                 console.log("Computer Win");
-                msg.innerText = "Computer Win!";
+                msg.innerText = "Computer Win! computer's scissor beats paper.";
                 compScore++;
                 cScore.innerText = compScore;
             }
         } else if (userChoice === "scissor") {
             if (compChoice === "paper") {
                 console.log("You Win");
-                msg.innerText = "You Win!";
+                msg.innerText = "You Win! Your scissor beats paper.";
                 userScore++;
                 yScore.innerText = userScore;
             } else {
                 console.log("Computer Win");
-                msg.innerText = "Computer Win!";
+                msg.innerText = "Computer Win! Computer's rock beats scissor.";
                 cScore.innerText = compScore;
                 compScore++;
             }
