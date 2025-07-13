@@ -57,8 +57,9 @@ const playGame = (userChoice) => {
             } else {
                 console.log("Computer Win");
                 msg.innerText = "Computer Win! Computer's rock beats scissor.";
-                cScore.innerText = compScore;
                 compScore++;
+                cScore.innerText = compScore;
+                
             }
         }
     }
